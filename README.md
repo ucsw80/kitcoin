@@ -1,10 +1,7 @@
 ktcwallet
 =========
 
-[![Build Status](https://travis-ci.org/btcsuite/btcwallet.png?branch=master)](https://travis-ci.org/btcsuite/btcwallet)
-[![Build status](https://ci.appveyor.com/api/projects/status/88nxvckdj8upqr36/branch/master?svg=true)](https://ci.appveyor.com/project/jrick/btcwallet/branch/master)
-
-btcwallet is a daemon handling bitcoin wallet functionality for a
+ktcwallet is a daemon handling bitcoin wallet functionality for a
 single user.  It acts as both an RPC client to btcd and an RPC server
 for wallet clients and legacy RPC applications.
 
@@ -27,7 +24,7 @@ does mean they could track all transactions involving your addresses
 and therefore know your exact balance.  In a future release, public data
 encryption will extend to transactions as well.
 
-btcwallet is not an SPV client and requires connecting to a local or
+ktcwallet is not an SPV client and requires connecting to a local or
 remote btcd instance for asynchronous blockchain queries and
 notifications over websockets.  Full btcd installation instructions
 can be found [here](https://github.com/ktcsuite/ktcd).  An alternative
