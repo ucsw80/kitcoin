@@ -1,4 +1,4 @@
-btcwallet
+ktcwallet
 =========
 
 [![Build Status](https://travis-ci.org/btcsuite/btcwallet.png?branch=master)](https://travis-ci.org/btcsuite/btcwallet)
@@ -10,12 +10,12 @@ for wallet clients and legacy RPC applications.
 
 Public and private keys are derived using the hierarchical
 deterministic format described by
-[BIP0032](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki).
+[BIP0032](https://github.com/kitcoin/bips/blob/master/bip-0032.mediawiki).
 Unencrypted private keys are not supported and are never written to
 disk.  btcwallet uses the
 `m/44'/<coin type>'/<account>'/<branch>/<address index>`
 HD path for all derived addresses, as described by
-[BIP0044](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki).
+[BIP0044](https://github.com/kitcoin/bips/blob/master/bip-0044.mediawiki).
 
 Due to the sensitive nature of public data in a BIP0032 wallet,
 btcwallet provides the option of encrypting not just private keys, but
@@ -30,7 +30,7 @@ encryption will extend to transactions as well.
 btcwallet is not an SPV client and requires connecting to a local or
 remote btcd instance for asynchronous blockchain queries and
 notifications over websockets.  Full btcd installation instructions
-can be found [here](https://github.com/btcsuite/btcd).  An alternative
+can be found [here](https://github.com/ktcsuite/ktcd).  An alternative
 SPV mode that is compatible with btcd and Bitcoin Core is planned for
 a future release.
 
@@ -60,9 +60,9 @@ Wallet clients can use one of two RPC servers:
 
 Install the latest MSIs available here:
 
-https://github.com/btcsuite/btcd/releases
+https://github.com/ktcsuite/ktcd/releases
 
-https://github.com/btcsuite/btcwallet/releases
+https://github.com/ktcsuite/ktcwallet/releases
 
 ### Windows/Linux/BSD/POSIX - Build from source
 
@@ -96,8 +96,8 @@ For a first time installation, the project and dependency sources can be
 obtained manually with `git` and `glide` (create directories as needed):
 
 ```
-git clone https://github.com/btcsuite/btcwallet $GOPATH/src/github.com/btcsuite/btcwallet
-cd $GOPATH/src/github.com/btcsuite/btcwallet
+git clone https://github.com/ktcsuite/ktcwallet $GOPATH/src/github.com/ktcsuite/ktcwallet
+cd $GOPATH/src/github.com/ktcsuite/ktcwallet
 glide install
 ```
 
